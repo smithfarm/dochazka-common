@@ -39,11 +39,11 @@ use strict;
 use warnings FATAL => 'all';
 
 #use App::CELL::Test::LogToFile;
-use App::Dochazka::Model::Interval;
+use App::Dochazka::Common::Model::Interval;
 use Test::Fatal;
 use Test::More;
 
-my $object = App::Dochazka::Model::Interval->spawn;
-is( ref $object, 'App::Dochazka::Model::Interval' );
+my $object = App::Dochazka::Common::Model::Interval->spawn;
+is( ref $object, 'App::Dochazka::Common::Model::Interval' );
 
 done_testing;

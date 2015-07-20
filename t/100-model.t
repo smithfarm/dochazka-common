@@ -43,17 +43,17 @@ use Data::Dumper;
 use Test::Fatal;
 use Test::More;
 
-use App::Dochazka::Model;
+use App::Dochazka::Common::Model;
 
 BEGIN {
     no strict 'refs';
-    *{"spawn"} = App::Dochazka::Model::make_spawn;
-    *{"filter"} = App::Dochazka::Model::make_filter( 'naivetest' );
-    *{"reset"} = App::Dochazka::Model::make_reset( 'naivetest' );
-    *{"naivetest"} = App::Dochazka::Model::make_accessor( 'naivetest' );
-    *{"TO_JSON"} = App::Dochazka::Model::make_TO_JSON( 'naivetest' );
-    *{"compare"} = App::Dochazka::Model::make_compare( 'naivetest' );
-    *{"clone"} = App::Dochazka::Model::make_clone( 'naivetest' );
+    *{"spawn"} = App::Dochazka::Common::Model::make_spawn;
+    *{"filter"} = App::Dochazka::Common::Model::make_filter( 'naivetest' );
+    *{"reset"} = App::Dochazka::Common::Model::make_reset( 'naivetest' );
+    *{"naivetest"} = App::Dochazka::Common::Model::make_accessor( 'naivetest' );
+    *{"TO_JSON"} = App::Dochazka::Common::Model::make_TO_JSON( 'naivetest' );
+    *{"compare"} = App::Dochazka::Common::Model::make_compare( 'naivetest' );
+    *{"clone"} = App::Dochazka::Common::Model::make_clone( 'naivetest' );
 }
 
 # make_spawn

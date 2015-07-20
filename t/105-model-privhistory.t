@@ -38,11 +38,11 @@ use strict;
 use warnings FATAL => 'all';
 
 #use App::CELL::Test::LogToFile;
-use App::Dochazka::Model::Privhistory;
+use App::Dochazka::Common::Model::Privhistory;
 use Test::Fatal;
 use Test::More;
 
-my $object = App::Dochazka::Model::Privhistory->spawn;
-is( ref $object, 'App::Dochazka::Model::Privhistory' );
+my $object = App::Dochazka::Common::Model::Privhistory->spawn;
+is( ref $object, 'App::Dochazka::Common::Model::Privhistory' );
 
 done_testing;

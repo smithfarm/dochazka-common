@@ -38,20 +38,20 @@ use strict;
 use warnings FATAL => 'all';
 
 #use App::CELL::Test::LogToFile;
-use App::Dochazka::Model::Employee;
+use App::Dochazka::Common::Model::Employee;
 use Test::Fatal;
 use Test::More;
 
 # spawn badness
-like( exception { App::Dochazka::Model::Employee->spawn( 'bogus' ); }, 
+like( exception { App::Dochazka::Common::Model::Employee->spawn( 'bogus' ); }, 
     qr/Odd number of parameters/ );
-like( exception { App::Dochazka::Model::Employee->spawn( 'bogus' => 1 ); }, 
+like( exception { App::Dochazka::Common::Model::Employee->spawn( 'bogus' => 1 ); }, 
     qr/not listed in the validation options: bogus/ );
 
 # spawn goodness
-my $obj = App::Dochazka::Model::Employee->spawn;
-is( ref $obj, 'App::Dochazka::Model::Employee' );
-$obj = App::Dochazka::Model::Employee->spawn(
+my $obj = App::Dochazka::Common::Model::Employee->spawn;
+is( ref $obj, 'App::Dochazka::Common::Model::Employee' );
+$obj = App::Dochazka::Common::Model::Employee->spawn(
     'eid' => 234,
     'sec_id' => 96609,
     'fullname' => "Friedrich Handel",
@@ -61,7 +61,7 @@ $obj = App::Dochazka::Model::Employee->spawn(
     'salt' => 'tastes good', 
     'remark' => 'too many notes'
 );
-is( ref $obj, 'App::Dochazka::Model::Employee' );
+is( ref $obj, 'App::Dochazka::Common::Model::Employee' );
 is( $obj->eid, 234 );
 is( $obj->sec_id, 96609 );
 is( $obj->fullname, "Friedrich Handel" );
@@ -91,7 +91,7 @@ my %props = (
     'remark' => 'go away'
 );
 $obj->reset( %props );
-my $obj2 = App::Dochazka::Model::Employee->spawn( %props );
+my $obj2 = App::Dochazka::Common::Model::Employee->spawn( %props );
 is_deeply( $obj, $obj2 );
 
 done_testing;

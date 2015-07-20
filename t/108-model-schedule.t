@@ -39,19 +39,19 @@ use strict;
 use warnings FATAL => 'all';
 
 #use App::CELL::Test::LogToFile;
-use App::Dochazka::Model::Schedule;
+use App::Dochazka::Common::Model::Schedule;
 use Data::Dumper;
 use Test::Fatal;
 use Test::More; 
 
-my $obj = App::Dochazka::Model::Schedule->spawn(
+my $obj = App::Dochazka::Common::Model::Schedule->spawn(
     sid => 234,
     scode => 'Woofus',
     schedule => '{ "foobar" : "bazblat" }',
     remark => 'nothing of interest',
     disabled => 0,
 );
-is( ref $obj, 'App::Dochazka::Model::Schedule' );
+is( ref $obj, 'App::Dochazka::Common::Model::Schedule' );
 is( $obj->sid, 234 );
 is( $obj->scode, 'Woofus' );
 is( $obj->schedule, '{ "foobar" : "bazblat" }' );

@@ -39,11 +39,11 @@ use strict;
 use warnings FATAL => 'all';
 
 #use App::CELL::Test::LogToFile;
-use App::Dochazka::Model::Lock;
+use App::Dochazka::Common::Model::Lock;
 use Test::Fatal;
 use Test::More;
 
-my $object = App::Dochazka::Model::Lock->spawn;
-is( ref $object, 'App::Dochazka::Model::Lock' );
+my $object = App::Dochazka::Common::Model::Lock->spawn;
+is( ref $object, 'App::Dochazka::Common::Model::Lock' );
 
 done_testing;

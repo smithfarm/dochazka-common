@@ -39,20 +39,20 @@ use strict;
 use warnings FATAL => 'all';
 
 #use App::CELL::Test::LogToFile;
-use App::Dochazka::Model::Activity;
+use App::Dochazka::Common::Model::Activity;
 use Test::Fatal;
 use Test::More;
 
 # spawn badness
-like( exception { App::Dochazka::Model::Activity->spawn( 'bogus' ); }, 
+like( exception { App::Dochazka::Common::Model::Activity->spawn( 'bogus' ); }, 
     qr/Odd number of parameters/ );
-like( exception { App::Dochazka::Model::Activity->spawn( 'bogus' => 1 ); }, 
+like( exception { App::Dochazka::Common::Model::Activity->spawn( 'bogus' => 1 ); }, 
     qr/not listed in the validation options: bogus/ );
 
 # spawn goodness
-my $obj = App::Dochazka::Model::Activity->spawn;
-is( ref $obj, 'App::Dochazka::Model::Activity' );
-$obj = App::Dochazka::Model::Activity->spawn(
+my $obj = App::Dochazka::Common::Model::Activity->spawn;
+is( ref $obj, 'App::Dochazka::Common::Model::Activity' );
+$obj = App::Dochazka::Common::Model::Activity->spawn(
     aid => 112, 
     code => 'BUBBA', 
     long_desc => 'A wrestling referee', 
@@ -78,9 +78,9 @@ my %props = (
     disabled => undef,
 );
 $obj->reset( %props );
-my $obj2 = App::Dochazka::Model::Activity->spawn( %props );
-is( ref $obj, 'App::Dochazka::Model::Activity' );
-is( ref $obj2, 'App::Dochazka::Model::Activity' );
+my $obj2 = App::Dochazka::Common::Model::Activity->spawn( %props );
+is( ref $obj, 'App::Dochazka::Common::Model::Activity' );
+is( ref $obj2, 'App::Dochazka::Common::Model::Activity' );
 is_deeply( $obj, $obj2 );
 map { is( $obj->{$_}, $props{$_} ); } keys( %props );
 is( $obj->aid, $obj->{'aid'} );

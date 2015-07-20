@@ -39,11 +39,11 @@ use strict;
 use warnings FATAL => 'all';
 
 #use App::CELL::Test::LogToFile;
-use App::Dochazka::Model::Schedintvls;
+use App::Dochazka::Common::Model::Schedintvls;
 use Test::Fatal;
 use Test::More;
 
-my $object = App::Dochazka::Model::Schedintvls->spawn;
-is( ref $object, 'App::Dochazka::Model::Schedintvls' );
+my $object = App::Dochazka::Common::Model::Schedintvls->spawn;
+is( ref $object, 'App::Dochazka::Common::Model::Schedintvls' );
 
 done_testing;
