@@ -30,19 +30,83 @@
 # POSSIBILITY OF SUCH DAMAGE.
 # ************************************************************************* 
 
-package App::Dochazka::Model::Lock;
+# ------------------------
+# Model module
+# ------------------------
+
+package App::Dochazka::Common;
 
 use 5.012;
 use strict;
-use warnings FATAL => 'all';
+use warnings;
 
-use App::Dochazka::Model;
-use constant ATTRS => qw( lid eid intvl remark );
+use Exporter 'import';
+use Time::Piece;
+use Time::Seconds;
+
+
+
+=head1 NAME
+
+App::Dochazka::Common - Dochazka Attendance and Time Tracking System shared modules
+
+
+
+
+=head1 VERSION
+
+Version 0.189
+
+=cut
 
 our $VERSION = '0.189';
 
-BEGIN {
-    App::Dochazka::Model::boilerplate( __PACKAGE__, ATTRS );
+
+
+
+=head1 DESCRIPTION
+
+This distro contains modules that are used by both the server
+L<App::Dochazka::REST> and the command-line client L<App::Dochazka::CLI>.
+
+=cut
+
+
+
+=head1 PACKAGE VARIABLES AND EXPORTS
+
+=cut
+
+our ( $t, $today, $yesterday, $tomorrow );
+
+our @EXPORT_OK = qw( 
+    $t
+    $today
+    $yesterday
+    $tomorrow
+    init_timepiece
+);
+
+
+
+=head1 FUNCTIONS
+
+
+=head2 init_timepiece
+
+(Re-)initialize the date/time-related package variables
+
+=cut
+
+sub init_timepiece {
+    #print "Entering " . __PACKAGE__ . "::init_timepiece\n";
+    $t = localtime;
+    $today = $t->ymd;
+    $yesterday = ($t - ONE_DAY)->ymd;
+    $tomorrow = ($t + ONE_DAY)->ymd;
 }
 
+
 1;
+
+

@@ -5,10 +5,10 @@ use warnings FATAL => 'all';
 use Module::Build 0.37;
 
 my $build = Module::Build->new(
-    module_name        => 'App::Dochazka',
+    module_name        => 'App::Dochazka::Common',
     dist_author        => q{Smithfarm <presnypreklad@gmail.com>},
     dist_abstract      => 'Dochazka ATT system shared modules',
-    dist_version_from  => 'lib/App/Dochazka.pm',
+    dist_version_from  => 'lib/App/Dochazka/Common.pm',
     license            => 'bsd',
     create_license     => 0,
     create_readme      => 1,
@@ -31,10 +31,10 @@ my $build = Module::Build->new(
     meta_merge => {
         resources => {
             homepage => 'https://sourceforge.net/projects/dochazka/',
-            repository => 'https://sourceforge.net/p/dochazka/code/',
+            repository => 'https://github.com/smithfarm/dochazka-common.git',
         }
     },
-    add_to_cleanup     => [ 'App-Dochazka-*' ],
+    add_to_cleanup     => [ 'App-Dochazka-Common-*' ],
 );
 
 $build->create_build_script;

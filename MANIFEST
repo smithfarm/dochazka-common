@@ -1,16 +1,16 @@
 Build.PL
 Changes
 ignore.txt
-lib/App/Dochazka.pm
-lib/App/Dochazka/Model.pm
-lib/App/Dochazka/Model/Activity.pm
-lib/App/Dochazka/Model/Employee.pm
-lib/App/Dochazka/Model/Interval.pm
-lib/App/Dochazka/Model/Lock.pm
-lib/App/Dochazka/Model/Privhistory.pm
-lib/App/Dochazka/Model/Schedhistory.pm
-lib/App/Dochazka/Model/Schedintvls.pm
-lib/App/Dochazka/Model/Schedule.pm
+lib/App/Dochazka/Common.pm
+lib/App/Dochazka/Common/Model.pm
+lib/App/Dochazka/Common/Model/Activity.pm
+lib/App/Dochazka/Common/Model/Employee.pm
+lib/App/Dochazka/Common/Model/Interval.pm
+lib/App/Dochazka/Common/Model/Lock.pm
+lib/App/Dochazka/Common/Model/Privhistory.pm
+lib/App/Dochazka/Common/Model/Schedhistory.pm
+lib/App/Dochazka/Common/Model/Schedintvls.pm
+lib/App/Dochazka/Common/Model/Schedule.pm
 Makefile.PL
 MANIFEST			This list of files
 META.json

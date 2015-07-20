@@ -30,19 +30,19 @@
 # POSSIBILITY OF SUCH DAMAGE.
 # ************************************************************************* 
 
-package App::Dochazka::Model::Schedule;
+package App::Dochazka::Common::Model::Interval;
 
 use 5.012;
 use strict;
 use warnings FATAL => 'all';
 
-use App::Dochazka::Model;
-use constant ATTRS => qw( sid scode schedule remark disabled );
+use App::Dochazka::Common::Model;
+use constant ATTRS => qw( iid eid aid code intvl long_desc remark );
 
 our $VERSION = '0.189';
 
 BEGIN {
-    App::Dochazka::Model::boilerplate( __PACKAGE__, ATTRS );
+    App::Dochazka::Common::Model::boilerplate( __PACKAGE__, ATTRS );
 }
 
 1;

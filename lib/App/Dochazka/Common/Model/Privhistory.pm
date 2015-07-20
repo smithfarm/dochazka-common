@@ -30,83 +30,19 @@
 # POSSIBILITY OF SUCH DAMAGE.
 # ************************************************************************* 
 
-# ------------------------
-# Model module
-# ------------------------
-
-package App::Dochazka;
+package App::Dochazka::Common::Model::Privhistory;
 
 use 5.012;
 use strict;
-use warnings;
+use warnings FATAL => 'all';
 
-use Exporter 'import';
-use Time::Piece;
-use Time::Seconds;
-
-
-
-=head1 NAME
-
-App::Dochazka - Dochazka Attendance and Time Tracking System shared modules
-
-
-
-
-=head1 VERSION
-
-Version 0.189
-
-=cut
+use App::Dochazka::Common::Model;
+use constant ATTRS => qw( phid eid priv effective remark );
 
 our $VERSION = '0.189';
 
-
-
-
-=head1 DESCRIPTION
-
-This distro contains modules that are used by both the server
-L<App::Dochazka::REST> and the command-line client L<App::Dochazka::CLI>.
-
-=cut
-
-
-
-=head1 PACKAGE VARIABLES AND EXPORTS
-
-=cut
-
-our ( $t, $today, $yesterday, $tomorrow );
-
-our @EXPORT_OK = qw( 
-    $t
-    $today
-    $yesterday
-    $tomorrow
-    init_timepiece
-);
-
-
-
-=head1 FUNCTIONS
-
-
-=head2 init_timepiece
-
-(Re-)initialize the date/time-related package variables
-
-=cut
-
-sub init_timepiece {
-    #print "Entering " . __PACKAGE__ . "::init_timepiece\n";
-    $t = localtime;
-    $today = $t->ymd;
-    $yesterday = ($t - ONE_DAY)->ymd;
-    $tomorrow = ($t + ONE_DAY)->ymd;
+BEGIN {
+    App::Dochazka::Common::Model::boilerplate( __PACKAGE__, ATTRS );
 }
 
-
 1;
-
-

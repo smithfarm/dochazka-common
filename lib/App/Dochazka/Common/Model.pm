@@ -30,7 +30,7 @@
 # POSSIBILITY OF SUCH DAMAGE.
 # ************************************************************************* 
 
-package App::Dochazka::Model;
+package App::Dochazka::Common::Model;
 
 use 5.012;
 use strict;
@@ -43,7 +43,7 @@ use Test::Deep::NoTest;
 
 =head1 NAME
 
-App::Dochazka::Model - functions shared by several modules within
+App::Dochazka::Common::Model - functions shared by several modules within
 the data model
 
 
@@ -71,12 +71,12 @@ used together as follows:
 
     BEGIN {
         no strict 'refs';
-        *{"spawn"} = App::Dochazka::Model::make_spawn;
-        *{"reset"} = App::Dochazka::Model::make_reset(
+        *{"spawn"} = App::Dochazka::Common::Model::make_spawn;
+        *{"reset"} = App::Dochazka::Common::Model::make_reset(
             'attr1', 'attr2',
         );
-        *{"attr1"} = App::Dochazka::Model::make_accessor( 'attr1' );
-        *{"attr2"} = App::Dochazka::Model::make_accessor( 'attr2', HASHREF );
+        *{"attr1"} = App::Dochazka::Common::Model::make_accessor( 'attr1' );
+        *{"attr2"} = App::Dochazka::Common::Model::make_accessor( 'attr2', HASHREF );
     }
 
 What this does: 
@@ -122,17 +122,17 @@ my %make = (
 Run all the necessary commands to "install" the methods inside your
 module. Call like this:
 
-    use App::Dochazka::Model;
+    use App::Dochazka::Common::Model;
     use constant ATTRS => qw( ... );
 
     BEGIN {
-        App::Dochazka::Model::boilerplate( __PACKAGE__, ATTRS );
+        App::Dochazka::Common::Model::boilerplate( __PACKAGE__, ATTRS );
     }
 
 where the constant ATTRS contains the list of object properties.
 
 This routine requires some explanation. It's purpose is to generate
-"boilerplate" code for the modules under C<App::Dochazka::Model>.
+"boilerplate" code for the modules under C<App::Dochazka::Common::Model>.
 That includes the following methods:
 
 =over 
