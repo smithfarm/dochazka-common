@@ -19,34 +19,25 @@ name: App-Dochazka-Common
 provides:
   App::Dochazka::Common:
     file: lib/App/Dochazka/Common.pm
-    version: '0.189'
+    version: '0.190'
   App::Dochazka::Common::Model:
     file: lib/App/Dochazka/Common/Model.pm
-    version: '0.189'
   App::Dochazka::Common::Model::Activity:
     file: lib/App/Dochazka/Common/Model/Activity.pm
-    version: '0.189'
   App::Dochazka::Common::Model::Employee:
     file: lib/App/Dochazka/Common/Model/Employee.pm
-    version: '0.189'
   App::Dochazka::Common::Model::Interval:
     file: lib/App/Dochazka/Common/Model/Interval.pm
-    version: '0.189'
   App::Dochazka::Common::Model::Lock:
     file: lib/App/Dochazka/Common/Model/Lock.pm
-    version: '0.189'
   App::Dochazka::Common::Model::Privhistory:
     file: lib/App/Dochazka/Common/Model/Privhistory.pm
-    version: '0.189'
   App::Dochazka::Common::Model::Schedhistory:
     file: lib/App/Dochazka/Common/Model/Schedhistory.pm
-    version: '0.189'
   App::Dochazka::Common::Model::Schedintvls:
     file: lib/App/Dochazka/Common/Model/Schedintvls.pm
-    version: '0.189'
   App::Dochazka::Common::Model::Schedule:
     file: lib/App/Dochazka/Common/Model/Schedule.pm
-    version: '0.189'
 requires:
   Params::Validate: '1.06'
   Test::Deep::NoTest: '0'
@@ -57,4 +48,4 @@ resources:
   homepage: https://sourceforge.net/projects/dochazka/
   license: http://opensource.org/licenses/BSD-3-Clause
   repository: https://github.com/smithfarm/dochazka-common.git
-version: '0.189'
+version: '0.190'
