@@ -70,4 +70,5 @@
 ^MANIFEST\.SKIP
 
 # Avoid archives of this distribution
-\bApp-Dochazka-[\d\.\_]+
+\bApp-Dochazka-Common-[\d\.\_]+
+\bCPAN_NAME$

@@ -1,6 +1,8 @@
 #!/bin/bash
-CPAN_NAME='App-Dochazka-Common'
-OBS_NAME='perl-App-Dochazka-Common'
+# generic release script
+# meant to be run from the distro directory
+CPAN_NAME=$(cat CPAN_NAME)
+OBS_NAME="perl-$CPAN_NAME"
 OBS_DIR="$HOME/home:smithfarm/$OBS_NAME/"
 perl Build.PL
 ./Build distmeta
