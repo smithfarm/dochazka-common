@@ -4,7 +4,7 @@
       "Smithfarm <presnypreklad@gmail.com>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.4212",
+   "generated_by" : "Module::Build version 0.4205",
    "license" : [
       "bsd"
    ],
@@ -12,7 +12,7 @@
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
       "version" : "2"
    },
-   "name" : "App-Dochazka",
+   "name" : "App-Dochazka-Common",
    "prereqs" : {
       "build" : {
          "requires" : {
@@ -38,44 +38,44 @@
       }
    },
    "provides" : {
-      "App::Dochazka" : {
-         "file" : "lib/App/Dochazka.pm",
+      "App::Dochazka::Common" : {
+         "file" : "lib/App/Dochazka/Common.pm",
          "version" : "0.189"
       },
-      "App::Dochazka::Model" : {
-         "file" : "lib/App/Dochazka/Model.pm",
+      "App::Dochazka::Common::Model" : {
+         "file" : "lib/App/Dochazka/Common/Model.pm",
          "version" : "0.189"
       },
-      "App::Dochazka::Model::Activity" : {
-         "file" : "lib/App/Dochazka/Model/Activity.pm",
+      "App::Dochazka::Common::Model::Activity" : {
+         "file" : "lib/App/Dochazka/Common/Model/Activity.pm",
          "version" : "0.189"
       },
-      "App::Dochazka::Model::Employee" : {
-         "file" : "lib/App/Dochazka/Model/Employee.pm",
+      "App::Dochazka::Common::Model::Employee" : {
+         "file" : "lib/App/Dochazka/Common/Model/Employee.pm",
          "version" : "0.189"
       },
-      "App::Dochazka::Model::Interval" : {
-         "file" : "lib/App/Dochazka/Model/Interval.pm",
+      "App::Dochazka::Common::Model::Interval" : {
+         "file" : "lib/App/Dochazka/Common/Model/Interval.pm",
          "version" : "0.189"
       },
-      "App::Dochazka::Model::Lock" : {
-         "file" : "lib/App/Dochazka/Model/Lock.pm",
+      "App::Dochazka::Common::Model::Lock" : {
+         "file" : "lib/App/Dochazka/Common/Model/Lock.pm",
          "version" : "0.189"
       },
-      "App::Dochazka::Model::Privhistory" : {
-         "file" : "lib/App/Dochazka/Model/Privhistory.pm",
+      "App::Dochazka::Common::Model::Privhistory" : {
+         "file" : "lib/App/Dochazka/Common/Model/Privhistory.pm",
          "version" : "0.189"
       },
-      "App::Dochazka::Model::Schedhistory" : {
-         "file" : "lib/App/Dochazka/Model/Schedhistory.pm",
+      "App::Dochazka::Common::Model::Schedhistory" : {
+         "file" : "lib/App/Dochazka/Common/Model/Schedhistory.pm",
          "version" : "0.189"
       },
-      "App::Dochazka::Model::Schedintvls" : {
-         "file" : "lib/App/Dochazka/Model/Schedintvls.pm",
+      "App::Dochazka::Common::Model::Schedintvls" : {
+         "file" : "lib/App/Dochazka/Common/Model/Schedintvls.pm",
          "version" : "0.189"
       },
-      "App::Dochazka::Model::Schedule" : {
-         "file" : "lib/App/Dochazka/Model/Schedule.pm",
+      "App::Dochazka::Common::Model::Schedule" : {
+         "file" : "lib/App/Dochazka/Common/Model/Schedule.pm",
          "version" : "0.189"
       }
    },
@@ -83,10 +83,10 @@
    "resources" : {
       "homepage" : "https://sourceforge.net/projects/dochazka/",
       "license" : [
-         "http://opensource.org/licenses/bsd-license.php"
+         "http://opensource.org/licenses/BSD-3-Clause"
       ],
       "repository" : {
-         "url" : "https://sourceforge.net/p/dochazka/code/"
+         "url" : "https://github.com/smithfarm/dochazka-common.git"
       }
    },
    "version" : "0.189"
