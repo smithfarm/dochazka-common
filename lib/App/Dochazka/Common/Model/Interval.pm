@@ -39,8 +39,6 @@ use warnings FATAL => 'all';
 use App::Dochazka::Common::Model;
 use constant ATTRS => qw( iid eid aid code intvl long_desc remark );
 
-our $VERSION = '0.189';
-
 BEGIN {
     App::Dochazka::Common::Model::boilerplate( __PACKAGE__, ATTRS );
 }

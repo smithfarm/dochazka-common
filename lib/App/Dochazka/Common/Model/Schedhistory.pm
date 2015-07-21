@@ -39,8 +39,6 @@ use warnings FATAL => 'all';
 use App::Dochazka::Common::Model;
 use constant ATTRS => qw( shid eid sid effective remark );
 
-our $VERSION = '0.189';
-
 BEGIN {
     App::Dochazka::Common::Model::boilerplate( __PACKAGE__, ATTRS );
 }

@@ -49,17 +49,6 @@ the data model
 
 
 
-=head1 VERSION
-
-Version 0.189
-
-=cut
-
-our $VERSION = '0.189';
-
-
-
-
 =head1 SYNOPSIS
 
 Shared data model functions. All three functions are designed to be
