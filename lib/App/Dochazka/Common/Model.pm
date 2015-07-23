@@ -100,6 +100,7 @@ my %make = (
     accessor => \&make_accessor,
     attrs => \&make_attrs,
     get => \&make_get,
+    set => \&make_set,
 );
 
 
@@ -144,6 +145,8 @@ That includes the following methods:
 
 =item * C<get>
 
+=item * C<set>
+
 =back
 
 as well as basic accessors for that model/class. 
@@ -162,11 +165,11 @@ sub boilerplate {
     $fn = $module . "::spawn";
     *{ $fn } = $make{"spawn"}->();
 
-    # generate filter, reset, TO_JSON, compare, compare_disabled, clone, attrs, and get
+    # generate filter, reset, TO_JSON, compare, compare_disabled, clone, attrs, get and set
     map {
         $fn = $module . '::' . $_;
         *{ $fn } = $make{$_}->( @attrs );
-    } qw( filter reset TO_JSON compare compare_disabled clone attrs get );
+    } qw( filter reset TO_JSON compare compare_disabled clone attrs get set );
 
     # generate accessors (one for each property)
     map {
@@ -406,6 +409,30 @@ sub make_get {
         }
         # unknown attribute
         return;
+    }
+}
+
+
+=head2 make_set
+
+Returns a ready-made 'set' method, which takes the name of an attribute and a
+value to set that attribute to. Returns true value on success, false on failure.
+
+=cut
+
+sub make_set {
+
+    my ( @attrs ) = validate_pos( @_, map { { type => SCALAR }; } @_ );
+
+    return sub {
+        my ( $self, $attr, $value ) = @_;
+
+        if ( grep { $_ eq $attr } @attrs ) {
+            $self->{$attr} = $value;
+            return 1;
+        }
+        # unknown attribute
+        return 0;
     }
 }
 

@@ -94,4 +94,12 @@ $obj->reset( %props );
 my $obj2 = App::Dochazka::Common::Model::Employee->spawn( %props );
 is_deeply( $obj, $obj2 );
 
+# set goodness
+my $desired_value = 'Please don\'t go!';
+$obj2->set( 'remark' => $desired_value );
+is( $obj2->remark, $desired_value );
+
+# get goodness
+is( $obj2->get( 'remark' ), $desired_value );
+
 done_testing;
