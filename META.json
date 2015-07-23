@@ -4,7 +4,7 @@
       "Smithfarm <presnypreklad@gmail.com>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.4205",
+   "generated_by" : "Module::Build version 0.4212",
    "license" : [
       "bsd"
    ],
@@ -40,7 +40,7 @@
    "provides" : {
       "App::Dochazka::Common" : {
          "file" : "lib/App/Dochazka/Common.pm",
-         "version" : "0.190"
+         "version" : "0.191"
       },
       "App::Dochazka::Common::Model" : {
          "file" : "lib/App/Dochazka/Common/Model.pm"
@@ -74,11 +74,11 @@
    "resources" : {
       "homepage" : "https://sourceforge.net/projects/dochazka/",
       "license" : [
-         "http://opensource.org/licenses/BSD-3-Clause"
+         "http://opensource.org/licenses/bsd-license.php"
       ],
       "repository" : {
          "url" : "https://github.com/smithfarm/dochazka-common.git"
       }
    },
-   "version" : "0.190"
+   "version" : "0.191"
 }
