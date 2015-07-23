@@ -156,3 +156,15 @@ Revision history for App::Dochazka
   instead of in App::Dochazka::CLI, so we can access them from
   App::Dochazka::REST as well
 
+0.190  2015-07-20
+- Remove version number info from submodules
+- README changes
+- Rename modules from App::Dochazka to App::Dochazka::Common
+- t/: adapt test suite to new module names
+
+0.191  2015-07-23 12:54 CEST
+- Model.pm: add set() boilerplate method
+- release.sh: new, simplified release script
+- MANIFEST: add LICENSE
+- Copyright (c) 2014-2015, SUSE LLC globally
+
