@@ -30,8 +30,8 @@ my $build = Module::Build->new(
     },
     meta_merge => {
         resources => {
-            homepage => 'https://sourceforge.net/projects/dochazka/',
-            repository => 'https://github.com/smithfarm/dochazka-common.git',
+            repository => 'https://github.com/smithfarm/dochazka-common',
+            bugtracker => 'https://github.com/smithfarm/dochazka-common/issues',
         }
     },
     add_to_cleanup     => [ 'App-Dochazka-Common-*' ],
