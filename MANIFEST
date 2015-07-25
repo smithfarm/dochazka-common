@@ -18,7 +18,6 @@ META.json
 META.yml
 README
 README.md
-release.sh
 t/00-load.t
 t/100-model.t
 t/101-model-activity.t
