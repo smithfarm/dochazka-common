@@ -55,11 +55,11 @@ App::Dochazka::Common - Dochazka Attendance and Time Tracking System shared modu
 
 =head1 VERSION
 
-Version 0.191
+Version 0.192
 
 =cut
 
-our $VERSION = '0.191';
+our $VERSION = '0.192';
 
 
 

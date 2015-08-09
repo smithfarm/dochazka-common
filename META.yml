@@ -19,7 +19,7 @@ name: App-Dochazka-Common
 provides:
   App::Dochazka::Common:
     file: lib/App/Dochazka/Common.pm
-    version: '0.191'
+    version: '0.193'
   App::Dochazka::Common::Model:
     file: lib/App/Dochazka/Common/Model.pm
   App::Dochazka::Common::Model::Activity:
@@ -38,6 +38,8 @@ provides:
     file: lib/App/Dochazka/Common/Model/Schedintvls.pm
   App::Dochazka::Common::Model::Schedule:
     file: lib/App/Dochazka/Common/Model/Schedule.pm
+  App::Dochazka::Common::Model::Tempintvls:
+    file: lib/App/Dochazka/Common/Model/Tempintvls.pm
 requires:
   Params::Validate: '1.06'
   Test::Deep::NoTest: '0'
@@ -45,7 +47,7 @@ requires:
   Time::Seconds: '0'
   perl: '5.012'
 resources:
-  homepage: https://sourceforge.net/projects/dochazka/
-  license: http://opensource.org/licenses/bsd-license.php
-  repository: https://github.com/smithfarm/dochazka-common.git
-version: '0.191'
+  bugtracker: https://github.com/smithfarm/dochazka-common/issues
+  license: http://opensource.org/licenses/BSD-3-Clause
+  repository: https://github.com/smithfarm/dochazka-common
+version: '0.193'

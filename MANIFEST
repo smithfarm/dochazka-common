@@ -29,6 +29,6 @@ t/105-model-privhistory.t
 t/106-model-schedhistory.t
 t/107-model-schedintvls.t
 t/108-model-schedule.t
-t/108-model-tempintvls.t
+t/109-model-tempintvls.t
 t/manifest.t
 t/pod.t

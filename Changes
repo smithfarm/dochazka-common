@@ -168,3 +168,9 @@ Revision history for App::Dochazka
 - MANIFEST: add LICENSE
 - Copyright (c) 2014-2015, SUSE LLC globally
 
+0.192  2015-08-09 17:06 CEST
+- README.md: fix MetaCPAN URL
+- Build.PL: update repository and bugtracker resources
+- add prerelease.sh script
+- add Tempintvls class
+

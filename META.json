@@ -40,7 +40,7 @@
    "provides" : {
       "App::Dochazka::Common" : {
          "file" : "lib/App/Dochazka/Common.pm",
-         "version" : "0.191"
+         "version" : "0.193"
       },
       "App::Dochazka::Common::Model" : {
          "file" : "lib/App/Dochazka/Common/Model.pm"
@@ -68,17 +68,22 @@
       },
       "App::Dochazka::Common::Model::Schedule" : {
          "file" : "lib/App/Dochazka/Common/Model/Schedule.pm"
+      },
+      "App::Dochazka::Common::Model::Tempintvls" : {
+         "file" : "lib/App/Dochazka/Common/Model/Tempintvls.pm"
       }
    },
    "release_status" : "stable",
    "resources" : {
-      "homepage" : "https://sourceforge.net/projects/dochazka/",
+      "bugtracker" : {
+         "web" : "https://github.com/smithfarm/dochazka-common/issues"
+      },
       "license" : [
-         "http://opensource.org/licenses/bsd-license.php"
+         "http://opensource.org/licenses/BSD-3-Clause"
       ],
       "repository" : {
-         "url" : "https://github.com/smithfarm/dochazka-common.git"
+         "url" : "https://github.com/smithfarm/dochazka-common"
       }
    },
-   "version" : "0.191"
+   "version" : "0.193"
 }
