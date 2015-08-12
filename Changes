@@ -174,3 +174,6 @@ Revision history for App::Dochazka
 - add prerelease.sh script
 - add Tempintvls class
 
+0.193  2015-08-12 09:57 CEST
+- Tempintvls class: drop superfluous attribute
+
