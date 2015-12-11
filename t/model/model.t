@@ -37,7 +37,7 @@
 
 use 5.012;
 use strict;
-use warnings FATAL => 'all';
+use warnings;
 
 use Data::Dumper;
 use Test::Fatal;
