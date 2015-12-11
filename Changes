@@ -179,3 +179,11 @@ Revision history for App-Dochazka-Common distribution
 0.193  2015-08-12 09:57 CEST
 - Tempintvls class: drop superfluous attribute
 
+0.194  2015-03-11 10:03 CET
+- t/reset.t: new unit moved over from App::Dochazka::REST
+- t/: cleanup and reorganize
+- t/: do not convert warnings into errors
+- Update release and prelease scripts and make them executable
+- Add policy model
+- README: convert to reStructuredTest
+
