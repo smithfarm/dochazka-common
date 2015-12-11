@@ -1,4 +1,6 @@
-Revision history for App::Dochazka
+=====================================================
+Revision history for App-Dochazka-Common distribution
+=====================================================
 
 0.147  2014-08-07 15:57 CEST
 - split off from App::Dochazka::REST into a separate distro
