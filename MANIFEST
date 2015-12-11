@@ -7,6 +7,7 @@ lib/App/Dochazka/Common/Model/Activity.pm
 lib/App/Dochazka/Common/Model/Employee.pm
 lib/App/Dochazka/Common/Model/Interval.pm
 lib/App/Dochazka/Common/Model/Lock.pm
+lib/App/Dochazka/Common/Model/Policy.pm
 lib/App/Dochazka/Common/Model/Privhistory.pm
 lib/App/Dochazka/Common/Model/Schedhistory.pm
 lib/App/Dochazka/Common/Model/Schedintvls.pm
@@ -24,6 +25,7 @@ t/model/activity.t
 t/model/employee.t
 t/model/interval.t
 t/model/lock.t
+t/model/policy.t
 t/model/privhistory.t
 t/model/schedhistory.t
 t/model/schedintvls.t
