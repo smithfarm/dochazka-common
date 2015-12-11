@@ -17,8 +17,7 @@ Makefile.PL
 MANIFEST			This list of files
 META.json
 META.yml
-README
-README.md
+README.rst
 t/00-load.t
 t/model/model.t
 t/model/activity.t
