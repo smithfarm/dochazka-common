@@ -4,6 +4,7 @@ ignore.txt
 lib/App/Dochazka/Common.pm
 lib/App/Dochazka/Common/Model.pm
 lib/App/Dochazka/Common/Model/Activity.pm
+lib/App/Dochazka/Common/Model/Component.pm
 lib/App/Dochazka/Common/Model/Employee.pm
 lib/App/Dochazka/Common/Model/Interval.pm
 lib/App/Dochazka/Common/Model/Lock.pm
@@ -22,6 +23,7 @@ README.rst
 t/00-load.t
 t/model/model.t
 t/model/activity.t
+t/model/component.t
 t/model/employee.t
 t/model/interval.t
 t/model/lock.t
