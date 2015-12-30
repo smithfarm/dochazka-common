@@ -10,7 +10,7 @@ configure_requires:
   Module::Build: '0.37'
   Software::License: '0'
 dynamic_config: 1
-generated_by: 'Module::Build version 0.4205, CPAN::Meta::Converter version 2.140640'
+generated_by: 'Module::Build version 0.4205, CPAN::Meta::Converter version 2.150005'
 license: bsd
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -19,17 +19,21 @@ name: App-Dochazka-Common
 provides:
   App::Dochazka::Common:
     file: lib/App/Dochazka/Common.pm
-    version: '0.194'
+    version: '0.195'
   App::Dochazka::Common::Model:
     file: lib/App/Dochazka/Common/Model.pm
   App::Dochazka::Common::Model::Activity:
     file: lib/App/Dochazka/Common/Model/Activity.pm
+  App::Dochazka::Common::Model::Component:
+    file: lib/App/Dochazka/Common/Model/Component.pm
   App::Dochazka::Common::Model::Employee:
     file: lib/App/Dochazka/Common/Model/Employee.pm
   App::Dochazka::Common::Model::Interval:
     file: lib/App/Dochazka/Common/Model/Interval.pm
   App::Dochazka::Common::Model::Lock:
     file: lib/App/Dochazka/Common/Model/Lock.pm
+  App::Dochazka::Common::Model::Policy:
+    file: lib/App/Dochazka/Common/Model/Policy.pm
   App::Dochazka::Common::Model::Privhistory:
     file: lib/App/Dochazka/Common/Model/Privhistory.pm
   App::Dochazka::Common::Model::Schedhistory:
@@ -50,4 +54,5 @@ resources:
   bugtracker: https://github.com/smithfarm/dochazka-common/issues
   license: http://opensource.org/licenses/bsd-license.php
   repository: https://github.com/smithfarm/dochazka-common
-version: '0.194'
+version: '0.195'
+x_serialization_backend: 'CPAN::Meta::YAML version 0.012'

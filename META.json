@@ -40,13 +40,16 @@
    "provides" : {
       "App::Dochazka::Common" : {
          "file" : "lib/App/Dochazka/Common.pm",
-         "version" : "0.194"
+         "version" : "0.195"
       },
       "App::Dochazka::Common::Model" : {
          "file" : "lib/App/Dochazka/Common/Model.pm"
       },
       "App::Dochazka::Common::Model::Activity" : {
          "file" : "lib/App/Dochazka/Common/Model/Activity.pm"
+      },
+      "App::Dochazka::Common::Model::Component" : {
+         "file" : "lib/App/Dochazka/Common/Model/Component.pm"
       },
       "App::Dochazka::Common::Model::Employee" : {
          "file" : "lib/App/Dochazka/Common/Model/Employee.pm"
@@ -56,6 +59,9 @@
       },
       "App::Dochazka::Common::Model::Lock" : {
          "file" : "lib/App/Dochazka/Common/Model/Lock.pm"
+      },
+      "App::Dochazka::Common::Model::Policy" : {
+         "file" : "lib/App/Dochazka/Common/Model/Policy.pm"
       },
       "App::Dochazka::Common::Model::Privhistory" : {
          "file" : "lib/App/Dochazka/Common/Model/Privhistory.pm"
@@ -85,5 +91,6 @@
          "url" : "https://github.com/smithfarm/dochazka-common"
       }
    },
-   "version" : "0.194"
+   "version" : "0.195",
+   "x_serialization_backend" : "JSON::PP version 2.27203"
 }

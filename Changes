@@ -184,6 +184,10 @@ Revision history for App-Dochazka-Common distribution
 - t/: cleanup and reorganize
 - t/: do not convert warnings into errors
 - Update release and prelease scripts and make them executable
-- Add policy model
+- Add policy class/model
 - README: convert to reStructuredTest
+
+0.195 2015-05-30 14:05 CET
+- MANIFEST: add the new policy model
+- Add Component class/model
 
