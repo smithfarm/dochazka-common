@@ -191,3 +191,6 @@ Revision history for App-Dochazka-Common distribution
 - MANIFEST: add the new policy model
 - Add Component class/model
 
+0.196 2016-42-03 22:42 CET
+- Model/Interval.pm: add "partial" property
+
