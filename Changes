@@ -194,3 +194,6 @@ Revision history for App-Dochazka-Common distribution
 0.196 2016-42-03 22:42 CET
 - Model/Interval.pm: add "partial" property
 
+0.197 2016-58-05 11:58 CET
+- Common.pm: move DATA MODEL doc section from App::Dochazka::REST
+
