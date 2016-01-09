@@ -74,6 +74,7 @@ my %props = (
     path => 'prd', 
     source => 'dont wanna live like a a refugee',
     acl => 'inactive',
+    parameters => {},
 );
 $object->reset( %props );
 my $obj2 = App::Dochazka::Common::Model::Component->spawn( %props );
@@ -85,6 +86,7 @@ is( $object->cid, $object->{'cid'} );
 is( $object->path, $object->{'path'} ); 
 is( $object->source, $object->{'source'} );
 is( $object->acl, $object->{'acl'} );
+is( $object->parameters, $object->{'parameters'} );
 
 note( 'TO_JSON' );
 my $u_obj = $object->TO_JSON;
@@ -94,6 +96,7 @@ is_deeply( $u_obj, {
     'path' => 'prd', 
     'source' => 'dont wanna live like a a refugee',
     'acl' => 'inactive',
+    'parameters' => {},
 });
 
 note( 'clone, compare' );

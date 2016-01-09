@@ -37,6 +37,7 @@ use warnings;
 
 #use App::CELL::Test::LogToFile;
 use App::Dochazka::Common::Model::Activity;
+use App::Dochazka::Common::Model::Component;
 use App::Dochazka::Common::Model::Employee;
 use App::Dochazka::Common::Model::Interval;
 use App::Dochazka::Common::Model::Lock;
@@ -44,9 +45,11 @@ use App::Dochazka::Common::Model::Privhistory;
 use App::Dochazka::Common::Model::Schedhistory;
 use App::Dochazka::Common::Model::Schedule;
 #use App::Dochazka::Common::Test;
+use Data::Dumper;
 use Test::Fatal;
 use Test::More;
 
+# Include _all_ parameters for each class
 my %props_dispatch = (
     'Activity' => {
         aid => undef,
@@ -54,6 +57,13 @@ my %props_dispatch = (
         long_desc => 'not interesting',
         remark => 'interesting',
         disabled => 0,
+    },
+    'Component' => {
+        cid => undef,
+        path => 'elephant/trunk.mi',
+        source => 'head',
+        acl => 'passerby',
+        parameters => {},
     },
     'Employee' => {
         eid => undef,
@@ -74,6 +84,7 @@ my %props_dispatch = (
         intvl => '("1553-02-21 00:15","1557-06-13 17:45")',
         long_desc => 'not really very long',
         remark => 'let this one pass',
+        partial => 0,
     },
     'Lock' => {
         lid => undef,
@@ -106,6 +117,7 @@ my %props_dispatch = (
 
 foreach my $cl (
     'Activity',
+    'Component',
     'Employee',
     'Interval',
     'Lock',
@@ -129,6 +141,7 @@ foreach my $cl (
     
     note( 'verify that we have all the properties right' );
     foreach my $prop ( @{ $full_class->attrs } ) {
+        note( "Property $prop" );
         ok( exists( $props_dispatch{$cl}->{$prop} ) );
     }
     my %attrs;
