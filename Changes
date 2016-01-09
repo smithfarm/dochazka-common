@@ -200,3 +200,7 @@ Revision history for App-Dochazka-Common distribution
 0.198 2016-12-09 16:56 CET
 - Component class: add parameters property
 
+0.199 2016-01-09 17:13 CET
+- prerelease.sh: fix date template
+- Component class: rename property from 'parameters' to 'validations'
+
