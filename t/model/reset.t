@@ -63,7 +63,7 @@ my %props_dispatch = (
         path => 'elephant/trunk.mi',
         source => 'head',
         acl => 'passerby',
-        parameters => {},
+        validations => {},
     },
     'Employee' => {
         eid => undef,
