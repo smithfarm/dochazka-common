@@ -204,3 +204,8 @@ Revision history for App-Dochazka-Common distribution
 - prerelease.sh: fix date template
 - Component class: rename property from 'parameters' to 'validations'
 
+0.200 2016-01-16 21:09 CET
+- make warnings non-fatal
+- Model/Tempintvls.pm: add attributes required by wip-feature-60
+- Model.pm->make_accessor(): create hash key if missing
+
