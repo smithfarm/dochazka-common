@@ -39,14 +39,9 @@ use warnings;
 use App::Dochazka::Common::Model;
 use constant ATTRS => qw( 
     tiid
-    context
-    emp_obj
-    act_obj
     tsrange
-    date_list
     long_desc
     remark
-    constructor_status
 );
 
 BEGIN {
