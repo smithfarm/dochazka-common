@@ -276,6 +276,7 @@ sub make_accessor {
         my $self = shift;
         validate_pos( @_, { type => $type, optional => 1 } );
         $self->{$subname} = shift if @_;
+        $self->{$subname} = undef unless exists $self->{$subname};
         return $self->{$subname};
     };
 }
