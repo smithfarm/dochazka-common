@@ -34,7 +34,7 @@ package App::Dochazka::Common::Model::Schedhistory;
 
 use 5.012;
 use strict;
-use warnings FATAL => 'all';
+use warnings;
 
 use App::Dochazka::Common::Model;
 use constant ATTRS => qw( shid eid sid effective remark );

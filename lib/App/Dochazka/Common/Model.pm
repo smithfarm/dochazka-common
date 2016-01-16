@@ -34,7 +34,7 @@ package App::Dochazka::Common::Model;
 
 use 5.012;
 use strict;
-use warnings FATAL => 'all';
+use warnings;
 
 use Params::Validate qw( :all );
 use Test::Deep::NoTest;

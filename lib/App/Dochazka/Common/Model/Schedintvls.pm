@@ -34,7 +34,7 @@ package App::Dochazka::Common::Model::Schedintvls;
 
 use 5.012;
 use strict;
-use warnings FATAL => 'all';
+use warnings;
 
 use App::Dochazka::Common::Model;
 use constant ATTRS => qw( ssid intvls schedule );

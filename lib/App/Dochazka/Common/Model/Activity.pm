@@ -34,7 +34,7 @@ package App::Dochazka::Common::Model::Activity;
 
 use 5.012;
 use strict;
-use warnings FATAL => 'all';
+use warnings;
 
 use App::Dochazka::Common::Model;
 use constant ATTRS => qw( aid code long_desc remark disabled );
