@@ -30,7 +30,7 @@
 # POSSIBILITY OF SUCH DAMAGE.
 # ************************************************************************* 
 
-package App::Dochazka::Common::Model::Tempintvls;
+package App::Dochazka::Common::Model::Tempintvl;
 
 use 5.012;
 use strict;
@@ -38,11 +38,8 @@ use warnings;
 
 use App::Dochazka::Common::Model;
 use constant ATTRS => qw( 
-    dry_run
-    long_desc
-    remark
+    intvl
     tiid
-    tsrange
 );
 
 BEGIN {

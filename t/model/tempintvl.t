@@ -30,7 +30,7 @@
 # POSSIBILITY OF SUCH DAMAGE.
 # ************************************************************************* 
 #
-# unit tests for Model/Tempintvls.pm
+# unit tests for Model/Tempintvl.pm
 #
 
 #!perl
@@ -39,11 +39,11 @@ use strict;
 use warnings;
 
 #use App::CELL::Test::LogToFile;
-use App::Dochazka::Common::Model::Tempintvls;
+use App::Dochazka::Common::Model::Tempintvl;
 use Test::Fatal;
 use Test::More;
 
-my $object = App::Dochazka::Common::Model::Tempintvls->spawn;
-is( ref $object, 'App::Dochazka::Common::Model::Tempintvls' );
+my $object = App::Dochazka::Common::Model::Tempintvl->spawn;
+is( ref $object, 'App::Dochazka::Common::Model::Tempintvl' );
 
 done_testing;
