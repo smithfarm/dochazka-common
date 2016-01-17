@@ -42,6 +42,8 @@ use constant ATTRS => qw(
     tsrange
     long_desc
     remark
+    clobber
+    dry_run
 );
 
 BEGIN {
