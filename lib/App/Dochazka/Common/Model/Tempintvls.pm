@@ -38,10 +38,11 @@ use warnings;
 
 use App::Dochazka::Common::Model;
 use constant ATTRS => qw( 
-    tiid
+    dry_run
     long_desc
     remark
-    dry_run
+    tiid
+    tsrange
 );
 
 BEGIN {
