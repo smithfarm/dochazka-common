@@ -39,10 +39,8 @@ use warnings;
 use App::Dochazka::Common::Model;
 use constant ATTRS => qw( 
     tiid
-    tsrange
     long_desc
     remark
-    clobber
     dry_run
 );
 
