@@ -40,7 +40,7 @@
    "provides" : {
       "App::Dochazka::Common" : {
          "file" : "lib/App/Dochazka/Common.pm",
-         "version" : "0.202"
+         "version" : "0.203"
       },
       "App::Dochazka::Common::Model" : {
          "file" : "lib/App/Dochazka/Common/Model.pm"
@@ -75,8 +75,8 @@
       "App::Dochazka::Common::Model::Schedule" : {
          "file" : "lib/App/Dochazka/Common/Model/Schedule.pm"
       },
-      "App::Dochazka::Common::Model::Tempintvls" : {
-         "file" : "lib/App/Dochazka/Common/Model/Tempintvls.pm"
+      "App::Dochazka::Common::Model::Tempintvl" : {
+         "file" : "lib/App/Dochazka/Common/Model/Tempintvl.pm"
       }
    },
    "release_status" : "stable",
@@ -91,6 +91,6 @@
          "url" : "https://github.com/smithfarm/dochazka-common"
       }
    },
-   "version" : "0.202",
+   "version" : "0.203",
    "x_serialization_backend" : "JSON::PP version 2.27203"
 }
