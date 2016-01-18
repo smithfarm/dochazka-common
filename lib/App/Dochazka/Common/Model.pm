@@ -65,7 +65,7 @@ used together as follows:
             'attr1', 'attr2',
         );
         *{"attr1"} = App::Dochazka::Common::Model::make_accessor( 'attr1' );
-        *{"attr2"} = App::Dochazka::Common::Model::make_accessor( 'attr2', HASHREF );
+        *{"attr2"} = App::Dochazka::Common::Model::make_accessor( 'attr2', { type => HASHREF } );
     }
 
 What this does: 
@@ -271,10 +271,10 @@ Returns a ready-made accessor.
 
 sub make_accessor {
     my ( $subname, $type ) = @_;
-    $type = $type || ( SCALAR | UNDEF );
+    $type = $type || { type => SCALAR | UNDEF, optional => 1 };
     sub {
         my $self = shift;
-        validate_pos( @_, { type => $type, optional => 1 } );
+        validate_pos( @_, $type );
         $self->{$subname} = shift if @_;
         $self->{$subname} = undef unless exists $self->{$subname};
         return $self->{$subname};
