@@ -219,3 +219,7 @@ Revision history for App-Dochazka-Common distribution
 0.203 2016-01-18 00:47 CET
 - Rename Tempintvls -> Tempintvl
 
+0.204 2016-01-19 15:14 CET
+- Model.pm: make make_accessor more useful
+- Model/Tempintvl.pm: add int_id accessor
+
