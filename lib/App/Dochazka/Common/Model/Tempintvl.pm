@@ -38,6 +38,7 @@ use warnings;
 
 use App::Dochazka::Common::Model;
 use constant ATTRS => qw( 
+    int_id
     intvl
     tiid
 );
