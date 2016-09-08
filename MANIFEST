@@ -1,6 +1,5 @@
 Build.PL
 Changes
-ignore.txt
 lib/App/Dochazka/Common.pm
 lib/App/Dochazka/Common/Model.pm
 lib/App/Dochazka/Common/Model/Activity.pm
