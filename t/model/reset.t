@@ -73,6 +73,7 @@ my %props_dispatch = (
         email => 'parboiled@reset-pieces.com',
         passhash => 'foo',
         salt => 'bar',
+        sync => undef,
         supervisor => undef,
         remark => 'why me?',
     },

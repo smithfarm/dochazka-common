@@ -37,7 +37,7 @@ use strict;
 use warnings;
 
 use App::Dochazka::Common::Model;
-use constant ATTRS => qw( eid sec_id fullname nick email passhash salt supervisor remark );
+use constant ATTRS => qw( eid sec_id fullname nick email passhash salt supervisor sync remark );
 
 BEGIN {
     App::Dochazka::Common::Model::boilerplate( __PACKAGE__, ATTRS );
