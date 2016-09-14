@@ -223,3 +223,7 @@ Revision history for App-Dochazka-Common distribution
 - Model.pm: make make_accessor more useful
 - Model/Tempintvl.pm: add int_id accessor
 
+0.205 2016-09-14 09:35 CEST
+- Travis CI
+- Add sync property to Employee class
+
