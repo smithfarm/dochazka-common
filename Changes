@@ -227,3 +227,8 @@ Revision history for App-Dochazka-Common distribution
 - Travis CI
 - Add sync property to Employee class
 
+0.206 2016-09-24 12:44 CEST
+- build/ops: change OBS_PROJECT to Application:Dochazka:staging
+- Session.pm: boilerplate for new module
+- Session.pm: implement get_session() function
+
