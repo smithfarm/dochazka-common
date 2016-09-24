@@ -36,8 +36,14 @@ use 5.012;
 use strict;
 use warnings;
 
+use App::CELL qw( $log );
+use Exporter qw( import );
 use Params::Validate qw( :all );
 use Plack::Session;
+
+our @EXPORT_OK = qw(
+    get_session
+);
 
 
 
@@ -56,4 +62,27 @@ Shared session-management functions.
 
 =head1 FUNCTIONS
 
+
+=head2 get_session
+
+Given a Plack environment (hashref), returns session object. If there is no
+session object in the environment, it creates one.
+
+Returns: nothing
+
+=cut
+
+sub get_session {
+    my ( $env ) = validate_pos( @_, { type => HASHREF } );
+    my $session;
+
+    if ( ${ $env->{'psgix.session'} } ) {
+        $session = $env->{'psgix.session'};
+        $log->info( "Plack environment already contains session " . $session->id );
+    } else {
+        $session = Plack::Session->new( $env );
+        $log->info( "Session missing in Plack environment; created new session " . $session->id );
+    }
+    return;
+}
 
