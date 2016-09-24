@@ -77,6 +77,9 @@
       },
       "App::Dochazka::Common::Model::Tempintvl" : {
          "file" : "lib/App/Dochazka/Common/Model/Tempintvl.pm"
+      },
+      "App::Dochazka::Common::Session" : {
+         "file" : "lib/App/Dochazka/Common/Session.pm"
       }
    },
    "release_status" : "stable",

@@ -231,4 +231,5 @@ Revision history for App-Dochazka-Common distribution
 - build/ops: change OBS_PROJECT to Application:Dochazka:staging
 - Session.pm: boilerplate for new module
 - Session.pm: implement get_session() function
+- MANIFEST: add the new Session.pm module
 
