@@ -37,7 +37,7 @@ use strict;
 use warnings;
 
 use App::Dochazka::Common::Model;
-use constant ATTRS => qw( shid eid sid effective remark );
+use constant ATTRS => qw( shid eid sid scode effective remark );
 
 BEGIN {
     App::Dochazka::Common::Model::boilerplate( __PACKAGE__, ATTRS );
