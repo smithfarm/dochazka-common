@@ -233,3 +233,7 @@ Revision history for App-Dochazka-Common distribution
 - Session.pm: implement get_session() function
 - MANIFEST: add the new Session.pm module
 
+0.207 2017-03-02 10:33 CET
+- Drop Session.pm module (it doesn't belong here)
+- Add scode to schedhistory model
+
